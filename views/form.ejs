@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+  <title>Submit Code Snippet</title>
+</head>
+<body>
+    <div class="container">
+  <h1>Submit Code Snippet</h1>
+  <form action="/submit" method="POST">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username"><br>
+
+    <label for="language">Preferred Code Language:</label>
+    <select id="language" name="language">
+      <option value="C++">C++</option>
+      <option value="Java">Java</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="Python">Python</option>
+    </select><br>
+
+    <label for="stdin">Standard Input (stdin):</label>
+    <input type="text" id="stdin" name="stdin"><br>
+
+    <label for="source">Source Code:</label><br>
+    <textarea id="source" name="source" rows="10" cols="50"></textarea><br>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+</body>
+</html>

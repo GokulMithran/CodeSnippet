@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+
+  <title>Submitted Entries</title>
+</head>
+<body>
+    <div class="container">
+  <h1>Submitted Entries</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Username</th>
+        <th>Code Language</th>
+        <th>Standard Input (stdin)</th>
+        <th>Timestamp</th>
+        <th>Source Code</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% entries.forEach(entry => { %>
+        <tr>
+          <td><%= entry.username %></td>
+          <td><%= entry.language %></td>
+          <td><%= entry.stdin %></td>
+          <td><%= entry.createdAt %></td>
+          <td><%= entry.source.slice(0, 100) %></td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+</div>  
+</body>
+</html>
